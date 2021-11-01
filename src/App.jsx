@@ -1,5 +1,5 @@
 import React from "react";
-import Summary from "./components/SummaryCard"
+import { Summary } from "./components/SummaryCard"
 
 const App = () => {
     return (
