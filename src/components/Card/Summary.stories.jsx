@@ -7,14 +7,18 @@ export default {
     argTypes: {
         size: {
             control: 'radio',
-            options: ['small', 'large']
+            options: ['large']
         },
-        artist: {
+        band: {
             control: 'text'
         },
-        song: {
+        information: {
             control: 'text'
+        },
+        image: {
+            control: 'image'
         }
+
     },
 };
 
@@ -23,19 +27,12 @@ const Template = (args) => <Card {...args} />;
 export const Default = Template.bind({});
 
 
-export const Small = Template.bind({});
-Small.args = {
-    size: 'small',
-    artist: 'Jay Z',
-    song: 'Hov'
-}
-
-
 export const Large = Template.bind({});
 Large.args = {
     size: 'large',
-    artist: 'Beyonce',
-    song: 'Single Ladies'
+    band: 'Beyonce',
+    information: 'Single Ladies',
+    image: 'https://media.pitchfork.com/photos/5d0aa73a4b0a62084982689c/2:1/w_2560%2Cc_limit/King-Crimson.jpg'
 }
 
 

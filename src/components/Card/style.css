@@ -1,25 +1,28 @@
-.card {
-    height: 150px;
-    width: 150px;
-    border-radius: 4px;
-    background-color: rgb(113, 172, 46);
-    color: white;
-    padding: 20px;
-    opacity: 0.6;
-    margin: 10px;
-}
 
-.card:hover {
-    opacity: 1;
+
+.card.large:hover {
+
     cursor: pointer;
 }
 
-.card.small{
-    height: 100px;
-    width: 100px;
-}
+
 
 .card.large {
+    display: inherit;
+    margin-left: 200px;
+    height: 400px;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color:white;
+    color: black;
+    padding: 20px;
+    
+    
+}
+
+img {
     height: 200px;
-    width: 200px;
+    width: 50%;
+    margin: 20px;
 }

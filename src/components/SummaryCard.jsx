@@ -3,23 +3,17 @@ import { Card } from './Card'
 
 
 const music = [{
-    artist: "Eminem", song: "Not Afraid"
-}, {
-    artist: "50 Cent", song: "21 Questions"
-}, {
-    artist: "Rihanna", song: "Umberalla"
+    size: "large", band: "King Crimson", image: "https://media.pitchfork.com/photos/5d0aa73a4b0a62084982689c/2:1/w_2560%2Cc_limit/King-Crimson.jpg", information: "King Crimson are a British progressive rock band formed in November of 1968 in London, England. They exerted a strong influence on the early 1970s progressive rock movement and continue to inspire subsequent generations of artists across multiple genres"
 }]
 
 
 
 export const Summary = () => {
-    const renderMusic = () => music.map((m, i) => <Card key={i} artist={m.artist} song={m.song} />)
+    const renderMusic = () => music.map((m, i) => <Card key={i} size={m.size} band={m.band} information={m.information} image={m.image} />)
     return (
-        <div>
-            <h2>Summary</h2>
-            <ol>{renderMusic()}</ol>
-
-        </div>
+        <>
+            <p>{renderMusic()}</p>
+        </>
     )
 }
 
