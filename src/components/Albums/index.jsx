@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LikeButton } from '../LikeButton';
 import './style.css';
 
 export const Albums = () => {
@@ -19,7 +20,7 @@ export const Albums = () => {
                 albums.map(st =>  (
                   <div className="album">
                     <ul key={st.id}>
-                        <strong role="heading" aria-label="title">{st.title}</strong>
+                    <LikeButton /> <strong role="heading" aria-label="title">{st.title}</strong>
                         <p>{st.description}</p>
                         <ol>
                           {st.tracklist.map(tr => (<li>{tr}</li>))}
