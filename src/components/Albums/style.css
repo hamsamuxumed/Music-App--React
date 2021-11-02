@@ -1,0 +1,16 @@
+.album-reader {
+    display: grid;
+    text-align: left;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.2rem;
+}
+.album {
+    width: 90vw;
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    opacity: 0.8;
+    font-family: monospace;
+    border: 2px solid black;
+    border-radius: 5px;
+}
