@@ -1,0 +1,25 @@
+.album {
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: rgb(113, 172, 46);
+    color: white;
+    padding: 20px;
+    opacity: 0.6;
+    margin: 10px;
+}
+
+.album:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.album.small{
+    height: 100px;
+    width: 100px;
+}
+
+.album.large {
+    height: 200px;
+    width: 200px;
+}
