@@ -10,7 +10,7 @@ export const Card = ({ size, band, information, image }) => {
 
     return (
         <div className={`card ${size}`} >
-            <h3>{band}</h3>
+            <h2>{band}</h2>
             <em>{information}</em>
             <img src={image} alt="Pic of King Crimson" />
         </div>
